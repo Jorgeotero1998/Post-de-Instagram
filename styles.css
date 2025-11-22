@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #fafafa;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Barra superior */
+.topbar {
+  width: 100%;
+  padding: 15px;
+  background: white;
+  border-bottom: 1px solid #ccc;
+  text-align: center;
+  font-size: 22px;
+  font-weight: bold;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+/* Feed */
+.feed {
+  width: 100%;
+  max-width: 400px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Tarjetas de post */
+.post {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+/* Cabecera de cada post */
+.post-header {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  gap: 10px;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.location {
+  font-size: 12px;
+  color: #666;
+}
+
+/* Imagen del post estilo feed */
+.post-img {
+  width: 100%;
+  max-height: 500px;
+  object-fit: cover;
+  display: block;
+  border-top: 1px solid #ddd;
+}
+
+/* Acciones */
+.post-actions {
+  padding: 10px;
+  font-size: 20px;
+}
+
+/* Descripción */
+.description {
+  padding: 0 10px 10px;
+}
+
+.hashtag {
+  color: #00376b;
+}
